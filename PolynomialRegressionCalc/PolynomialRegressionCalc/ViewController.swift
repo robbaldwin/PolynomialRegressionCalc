@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     // Provide known X/Y values as Arrays of Doubles
+    // X/Y pairs must be at corresponding Indexes
     // A minimum of three values must be provided
     
-    let xValues: [Double] = [0, 10, 20,30,40,50,60,70,80,90,100]
-    let yValues: [Double] = [1,20,25,48,65,70,95,170,210,290,340]
+    let xValues: [Double] = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    let yValues: [Double] = [1, 20, 25, 48, 65, 70, 95, 170, 210, 290, 340]
 
     override func viewDidLoad() {
         super.viewDidLoad()
