@@ -12,8 +12,9 @@ class ViewController: UIViewController {
 
     // Provide known X/Y values as Arrays of Doubles
     // A minimum of three values must be provided
-    let xValues: [Double] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    let yValues: [Double] = [1, 6, 17, 34, 57, 86, 121, 162, 209, 262, 321]
+    
+    let xValues: [Double] = [0, 10, 20,30,40,50,60,70,80,90,100]
+    let yValues: [Double] = [1,20,25,48,65,70,95,170,210,290,340]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         let prCalc = PolynomialRegressionCalculator(xValues: xValues, yValues: yValues)
         
         // Set xValue that you wish to know the predicted Y value for
-        let xValue = 11.0
+        let xValue = 110.0
         
         // Pass to the function and unwrap the result
         if let result = prCalc.predictYValue(at: xValue) {
