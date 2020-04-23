@@ -10,6 +10,10 @@ https://rosettacode.org/wiki/Polynomial_regression
 
 You just need the **PolynomicalRegressionCalculator.swift** class, although a simple Xcode project has been provided as a demonstration.
 
+X and Y values must be provided in Arrays of Doubles, with corresponding values at the same index.
+
+At least 3 values must be provided in order to make calcuations.
+
 ```
 let xValues: [Double] = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 let yValues: [Double] = [1, 20, 25, 48, 65, 70, 95, 170, 210, 290, 340]
