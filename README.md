@@ -8,7 +8,7 @@ https://rosettacode.org/wiki/Polynomial_regression
 
 # Usage
 
-You just need the PolynomicalRegressionCalculator.swift class, although a simple Xcode project has been provided as a demonstration.
+You just need the **PolynomicalRegressionCalculator.swift** class, although a simple Xcode project has been provided as a demonstration.
 
 ```
 let xValues: [Double] = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
