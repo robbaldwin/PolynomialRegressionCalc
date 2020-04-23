@@ -1,4 +1,4 @@
-# PolynomialRegressionCalc
+# Polynomial Regression Calculator (written in Swift)
 A tool written in Swift to find an approximating polynomial of a known degree for a given data.
 
 This is useful for non-linear data sets, which tend to follow a curve.  The charts below show why Polynomial regression is better suited to non-linear data sets.
