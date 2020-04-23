@@ -26,6 +26,8 @@ if let result = prCalc.predictYValue(at: queryXValue) {
 } else {
     print("Unable to provide result.")
 }
+
+// result = 417.61212121212174
 ```
 
 ![RawData](https://user-images.githubusercontent.com/18574681/80108473-3cbde580-8574-11ea-87bf-22c4d64b8c76.png)
