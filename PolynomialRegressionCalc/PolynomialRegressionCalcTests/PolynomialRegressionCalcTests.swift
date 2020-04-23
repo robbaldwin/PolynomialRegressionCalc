@@ -11,24 +11,31 @@ import XCTest
 
 class PolynomialRegressionCalcTests: XCTestCase {
 
+    var prCalc: PolynomialRegressionCalculator!
+    var xValues: [Double]!
+    var yValues: [Double]!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        xValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        yValues = [1, 6, 17, 34, 57, 86, 121, 162, 209, 262, 321]
+        
+        prCalc = PolynomialRegressionCalculator(xValues: xValues, yValues: yValues)
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        prCalc = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_PRCalc_providesExpectedOutput() throws {
+        
+        let expectedResults: [Double] = [1, 6, 17, 34, 57, 86, 121, 162, 209, 262, 321]
+        
+        for i in 0...10 {
+            if let result = prCalc.predictYValue(at: Double(i)) {
+                XCTAssertEqual(result, expectedResults[i])
+            } else {
+                XCTFail("Result returned nil")
+            }
         }
     }
-
 }
